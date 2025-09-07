@@ -1,0 +1,28 @@
+[env]
+INSTALL_NAME = "{SITE_NAME}"
+INSTALL_DIR = "{SITE_DESTINATION}"
+INSTALL_VERSION = "{INSTALL_VERSION}"
+INSTALL_VERSION_VARIANT = "{INSTALL_VERSION_VARIANT}"
+
+N_PROCS = 8
+
+[install]
+versions = ["gnu", "nvidia"]
+prefix = "{SITE_DESTINATION}"
+# note: this is Lua regex: you will need to escape - and + (using %)
+format = "^{INSTALL_VERSION_VARIANT}$"
+# (optional) relocate after install
+destination = "{SITE_DESTINATION}/{INSTALL_VERSION_VARIANT}"
+stage = true
+
+[module]
+ADIOS2_PATH = "{INSTALL_DIR}"
+ADIOS2_PE = "{INSTALL_VERSION}"
+INSTALL_VERSION = "{INSTALL_VERSION}"
+
+[post]
+# toggles mandatory relocate if `stage` and `clean` are true. If the install
+# script already relocates the package, then we can set `safe = false`
+safe = false
+# delete staging area after successful install
+clean = true

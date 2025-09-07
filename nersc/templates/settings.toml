@@ -1,0 +1,8 @@
+[constant]
+# Used for versioning
+template_version = 1
+
+name        = "activate"
+repo_prefix = "INVALID"
+
+GLOBAL_TUTORIAL_REPO_DIR = "/global/common/software/nstaff/blaschke/tutorials/julia-hpc-tutorial-icpp25"

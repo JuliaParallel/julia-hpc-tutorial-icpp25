@@ -1,0 +1,5 @@
+name = "adios2"
+
+relocate = false
+destination = "{SM_ROOT}/adios2/install"
+modules = "{SM_ROOT}/modules"
