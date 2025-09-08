@@ -4,15 +4,15 @@ module load PrgEnv-gnu
 module load python
 module load julia
 
-ml use /global/common/software/nersc/julia_hpc_24/modules/
+ml use {{{GLOBAL_TUTORIAL_REPO_DIR}}}/nersc/modules/
 ml load cray-hdf5-parallel
-ml load adios2
+ml load adios2/gnu
 
-export JULIA_PROJECT={{TUTORIAL_REPO_DIR}}
+export JULIA_PROJECT={{{repo_prefix}}}
 export JULIA_DEPOT_PATH=${SCRATCH}/depot
-export JULIA_NUM_THREADS={{THREADS_CT}}
+export JULIA_NUM_THREADS={{{THREADS_CT}}}
 
-readarray -t ijulia_boostrap < <(julia {{NERSC_RESOURCE_DIR}}/bootstrap.jl)
+readarray -t ijulia_boostrap < <(julia {{{NERSC_RESOURCE_DIR}}}/bootstrap.jl)
 
 echo "Check-and-install returned following output:"
 _IFS=$IFS

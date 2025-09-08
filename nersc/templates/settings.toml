@@ -5,4 +5,10 @@ template_version = 1
 name        = "activate"
 repo_prefix = "INVALID"
 
+NERSC_RESOURCE_DIR       = "/global/common/software/nersc9/julia/kernels/"
 GLOBAL_TUTORIAL_REPO_DIR = "/global/common/software/nstaff/blaschke/tutorials/julia-hpc-tutorial-icpp25"
+
+[zip]
+
+THREADS_CT = [1, 8]
+THREADS_NAME = ["single", "multi"]
