@@ -6,7 +6,7 @@ module load julia
 
 ml use {{{GLOBAL_TUTORIAL_REPO_DIR}}}/nersc/modules/
 ml load cray-hdf5-parallel
-ml load adios2
+ml load adios2/gnu
 
 export JULIA_PROJECT={{{repo_prefix}}}
 export JULIA_DEPOT_PATH=${SCRATCH}/depot
