@@ -30,3 +30,5 @@ JuliaLocalPreferences.toml
 activate.sh
 nersc/modules
 nersc/adios2/install
+
+.ipynb_checkpoints

@@ -1,0 +1,10 @@
+{
+  "display_name": "JuliaCon24 HPC Workshop",
+  "argv": [
+    "{resource_dir}/kernel-helper.sh",
+    "{connection_file}"
+  ],
+  "language": "julia",
+  "env": {},
+  "interrupt_mode": "signal"
+}

@@ -1,0 +1,4 @@
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Hwloc = "0e44f5e4-bd66-52a0-8798-143a42290a1d"
+OhMyThreads = "67456a42-1dca-4109-a031-0a68de7e3ad5"
